@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    box-sizing: border-box;}
+body {
+    height: 100%;
+
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // background: url(https://a-static.mlcdn.com.br/800x560/bandeira-lgbt-orgulho-gay-rainbow-flag-eq-multivendas/equipemultivendas/8281808707/9b35c61e5fe5549e2f403374e30146ce.jpg) no-repeat center center fixed;
+    // background-size: cover;
+    background-color: #FF0078;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    input {
+        width: 100px;
+    }
+}
+#list {
+    list-style: none;
+
+
+    li {
+        background-color: antiquewhite;
+    }}
