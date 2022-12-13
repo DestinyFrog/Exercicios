@@ -11,13 +11,28 @@ function createBox() {
     let val = Generate();
     intex.appendChild( document.createTextNode(val) );
 
+    let butExc = document.createElement('button');
+    butExc.innerText = "🗑️";
+    butExc.addEventListener('click', (obj) => {
+        obj.target.parentElement.remove();
+    });
+
     let but = document.createElement('button');
     but.setAttribute('type', 'button');
     but.innerText = ' = ';
     but.addEventListener('click', (obj) => {
-        obj.target.innerText = '= '+eval( val );
+        if(obj.target.innerText == "="){
+            let result = eval( val );
+            if( Number.isInteger(result) == false){
+                result = result.toFixed(3); }
+
+            obj.target.innerText = '= '+ result;
+        }else{
+            obj.target.innerText = '=';
+        }
     });
 
+    liz.appendChild( butExc );
     liz.appendChild( intex );
     liz.appendChild( but );
     document.getElementById('list').appendChild( liz );

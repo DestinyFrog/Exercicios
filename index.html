@@ -3,20 +3,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Não leia isso (:</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
         <input type="number" id="max">
-        <input type="text" id="opera" value="+">
+        <select id="opera">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">÷</option>
+        </select>
         <input type="number" value="5" id="rangeBox">
         <button type="button" onclick="make()">Run</button>
+        <ul id="list"></ul>
         <button type="button"
             onclick="document.getElementById('list').innerHTML = null;"
             >Clear</button>
     </header>
-    <ul id="list"></ul>
     <script src="./script.js"></script>
 </body>
 </html>

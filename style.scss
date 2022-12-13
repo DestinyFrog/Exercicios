@@ -1,12 +1,7 @@
 * {
     margin: 0;
     border: 0;
-    padding: 0;
-
-    padding-left:   8px;
-    padding-right:  8px;
-    padding-top:    2px;
-    padding-bottom: 2px;
+    padding: 3px;
 
     outline: none;
 
@@ -23,23 +18,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    * {
-        max-width: 480px;
-    }
 
     background-color: #FF0078;}
 header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 680px;
+    width: 380px;
     justify-content: center;}
 #list {
-    width: 680px;
+    width: 380px;
     list-style: none;
+    margin: 0;
 
     li {
-        border-style: dashed;
+        border-style: solid;
         border-color: #daaaaa;
         border-width: 1px;
 
@@ -48,6 +41,13 @@ header {
         justify-content: space-between;
 
         button {
-            background-color: #ffb6d5;
+            background-color: #fDc9f1;
+            min-width: 35px;
+
+            padding-left: 10px;
+            padding-right: 10px;
+
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
     }}
