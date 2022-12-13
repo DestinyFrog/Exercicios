@@ -26,6 +26,17 @@ header {
   width: 380px;
   justify-content: center;
 }
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+header div input {
+  text-align: center;
+}
 
 #list {
   width: 380px;

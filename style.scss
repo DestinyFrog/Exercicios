@@ -25,7 +25,21 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     width: 380px;
-    justify-content: center;}
+    justify-content: center;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        padding-right: 10px;
+        padding-left:  10px;
+
+        input {
+            text-align: center;
+        }
+    }
+}
 #list {
     width: 380px;
     list-style: none;
